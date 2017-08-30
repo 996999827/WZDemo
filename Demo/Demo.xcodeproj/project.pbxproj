@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		2C89468B26B5D5E04F3FA952 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DCD7AA03806DF7FC06999F /* libPods-Demo.a */; };
+		8444D11A1F5657E2009D7AF5 /* Public.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444D1191F5657E2009D7AF5 /* Public.m */; };
+		8444D12F1F56591C009D7AF5 /* RCRoomSelectCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444D11D1F56591C009D7AF5 /* RCRoomSelectCollectionCell.m */; };
+		8444D1301F56591C009D7AF5 /* RCRoomSelectCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444D11E1F56591C009D7AF5 /* RCRoomSelectCollectionCell.xib */; };
+		8444D1311F56591C009D7AF5 /* RCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444D1211F56591C009D7AF5 /* RCHomeViewController.m */; };
+		8444D1321F56591C009D7AF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444D1231F56591C009D7AF5 /* ViewController.m */; };
+		8444D1331F56591C009D7AF5 /* AnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444D1271F56591C009D7AF5 /* AnimationView.m */; };
+		8444D1341F56591C009D7AF5 /* AnimationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444D1281F56591C009D7AF5 /* AnimationView.xib */; };
+		8444D1351F56591C009D7AF5 /* MoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444D12A1F56591C009D7AF5 /* MoreView.m */; };
+		8444D1361F56591C009D7AF5 /* MoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444D12B1F56591C009D7AF5 /* MoreView.xib */; };
+		8444D1371F56591C009D7AF5 /* RoomSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444D12D1F56591C009D7AF5 /* RoomSelectView.m */; };
+		8444D1381F56591C009D7AF5 /* RoomSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444D12E1F56591C009D7AF5 /* RoomSelectView.xib */; };
+		8444D13B1F565A0E009D7AF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8444D1391F565A0E009D7AF5 /* Main.storyboard */; };
 		8460786E1F56531B00C742BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8460786D1F56531B00C742BA /* main.m */; };
 		846078711F56531B00C742BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846078701F56531B00C742BA /* AppDelegate.m */; };
-		846078741F56531B00C742BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846078731F56531B00C742BA /* ViewController.m */; };
-		846078771F56531B00C742BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846078751F56531B00C742BA /* Main.storyboard */; };
 		846078791F56531B00C742BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846078781F56531B00C742BA /* Assets.xcassets */; };
 		8460787C1F56531B00C742BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8460787A1F56531B00C742BA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,13 +29,30 @@
 /* Begin PBXFileReference section */
 		19DCD7AA03806DF7FC06999F /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63635026299DE0DBFED980F8 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		8444D1171F565611009D7AF5 /* Common.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.pch; sourceTree = "<group>"; };
+		8444D1181F5657E2009D7AF5 /* Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
+		8444D1191F5657E2009D7AF5 /* Public.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Public.m; sourceTree = "<group>"; };
+		8444D11C1F56591C009D7AF5 /* RCRoomSelectCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRoomSelectCollectionCell.h; sourceTree = "<group>"; };
+		8444D11D1F56591C009D7AF5 /* RCRoomSelectCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRoomSelectCollectionCell.m; sourceTree = "<group>"; };
+		8444D11E1F56591C009D7AF5 /* RCRoomSelectCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCRoomSelectCollectionCell.xib; sourceTree = "<group>"; };
+		8444D1201F56591C009D7AF5 /* RCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCHomeViewController.h; sourceTree = "<group>"; };
+		8444D1211F56591C009D7AF5 /* RCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCHomeViewController.m; sourceTree = "<group>"; };
+		8444D1221F56591C009D7AF5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8444D1231F56591C009D7AF5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8444D1261F56591C009D7AF5 /* AnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationView.h; sourceTree = "<group>"; };
+		8444D1271F56591C009D7AF5 /* AnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationView.m; sourceTree = "<group>"; };
+		8444D1281F56591C009D7AF5 /* AnimationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationView.xib; sourceTree = "<group>"; };
+		8444D1291F56591C009D7AF5 /* MoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreView.h; sourceTree = "<group>"; };
+		8444D12A1F56591C009D7AF5 /* MoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreView.m; sourceTree = "<group>"; };
+		8444D12B1F56591C009D7AF5 /* MoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreView.xib; sourceTree = "<group>"; };
+		8444D12C1F56591C009D7AF5 /* RoomSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomSelectView.h; sourceTree = "<group>"; };
+		8444D12D1F56591C009D7AF5 /* RoomSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomSelectView.m; sourceTree = "<group>"; };
+		8444D12E1F56591C009D7AF5 /* RoomSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomSelectView.xib; sourceTree = "<group>"; };
+		8444D13A1F565A0E009D7AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		846078691F56531B00C742BA /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8460786D1F56531B00C742BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8460786F1F56531B00C742BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		846078701F56531B00C742BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		846078721F56531B00C742BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		846078731F56531B00C742BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		846078761F56531B00C742BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		846078781F56531B00C742BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8460787B1F56531B00C742BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8460787D1F56531B00C742BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +79,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8444D11B1F56591C009D7AF5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8444D11C1F56591C009D7AF5 /* RCRoomSelectCollectionCell.h */,
+				8444D11D1F56591C009D7AF5 /* RCRoomSelectCollectionCell.m */,
+				8444D11E1F56591C009D7AF5 /* RCRoomSelectCollectionCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8444D11F1F56591C009D7AF5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8444D1201F56591C009D7AF5 /* RCHomeViewController.h */,
+				8444D1211F56591C009D7AF5 /* RCHomeViewController.m */,
+				8444D1221F56591C009D7AF5 /* ViewController.h */,
+				8444D1231F56591C009D7AF5 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8444D1241F56591C009D7AF5 /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modes;
+			sourceTree = "<group>";
+		};
+		8444D1251F56591C009D7AF5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8444D1261F56591C009D7AF5 /* AnimationView.h */,
+				8444D1271F56591C009D7AF5 /* AnimationView.m */,
+				8444D1281F56591C009D7AF5 /* AnimationView.xib */,
+				8444D1291F56591C009D7AF5 /* MoreView.h */,
+				8444D12A1F56591C009D7AF5 /* MoreView.m */,
+				8444D12B1F56591C009D7AF5 /* MoreView.xib */,
+				8444D12C1F56591C009D7AF5 /* RoomSelectView.h */,
+				8444D12D1F56591C009D7AF5 /* RoomSelectView.m */,
+				8444D12E1F56591C009D7AF5 /* RoomSelectView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		846078601F56531B00C742BA = {
 			isa = PBXGroup;
 			children = (
@@ -73,11 +144,16 @@
 		8460786B1F56531B00C742BA /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				8444D11B1F56591C009D7AF5 /* Cells */,
+				8444D11F1F56591C009D7AF5 /* Controllers */,
+				8444D1241F56591C009D7AF5 /* Modes */,
+				8444D1251F56591C009D7AF5 /* Views */,
 				8460786F1F56531B00C742BA /* AppDelegate.h */,
 				846078701F56531B00C742BA /* AppDelegate.m */,
-				846078721F56531B00C742BA /* ViewController.h */,
-				846078731F56531B00C742BA /* ViewController.m */,
-				846078751F56531B00C742BA /* Main.storyboard */,
+				8444D1391F565A0E009D7AF5 /* Main.storyboard */,
+				8444D1181F5657E2009D7AF5 /* Public.h */,
+				8444D1191F5657E2009D7AF5 /* Public.m */,
+				8444D1171F565611009D7AF5 /* Common.pch */,
 				846078781F56531B00C742BA /* Assets.xcassets */,
 				8460787A1F56531B00C742BA /* LaunchScreen.storyboard */,
 				8460787D1F56531B00C742BA /* Info.plist */,
@@ -164,9 +240,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8444D13B1F565A0E009D7AF5 /* Main.storyboard in Resources */,
 				8460787C1F56531B00C742BA /* LaunchScreen.storyboard in Resources */,
+				8444D1301F56591C009D7AF5 /* RCRoomSelectCollectionCell.xib in Resources */,
 				846078791F56531B00C742BA /* Assets.xcassets in Resources */,
-				846078771F56531B00C742BA /* Main.storyboard in Resources */,
+				8444D1341F56591C009D7AF5 /* AnimationView.xib in Resources */,
+				8444D1381F56591C009D7AF5 /* RoomSelectView.xib in Resources */,
+				8444D1361F56591C009D7AF5 /* MoreView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,8 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846078741F56531B00C742BA /* ViewController.m in Sources */,
+				8444D1321F56591C009D7AF5 /* ViewController.m in Sources */,
 				846078711F56531B00C742BA /* AppDelegate.m in Sources */,
+				8444D1371F56591C009D7AF5 /* RoomSelectView.m in Sources */,
+				8444D1311F56591C009D7AF5 /* RCHomeViewController.m in Sources */,
+				8444D12F1F56591C009D7AF5 /* RCRoomSelectCollectionCell.m in Sources */,
+				8444D1331F56591C009D7AF5 /* AnimationView.m in Sources */,
+				8444D1351F56591C009D7AF5 /* MoreView.m in Sources */,
+				8444D11A1F5657E2009D7AF5 /* Public.m in Sources */,
 				8460786E1F56531B00C742BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,10 +320,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		846078751F56531B00C742BA /* Main.storyboard */ = {
+		8444D1391F565A0E009D7AF5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				846078761F56531B00C742BA /* Base */,
+				8444D13A1F565A0E009D7AF5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -350,6 +436,7 @@
 			baseConfigurationReference = 63635026299DE0DBFED980F8 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common.pch";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jha.Demo;
@@ -362,6 +449,7 @@
 			baseConfigurationReference = D76EF936FE12E773A7D46B1E /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Common.pch";
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jha.Demo;
@@ -388,6 +476,7 @@
 				846078821F56531B00C742BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
