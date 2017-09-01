@@ -38,11 +38,11 @@
 
 - (void)addController {
     
-    [self setupChildVc:[[EUCDialogController alloc] init] title:@"消息" image:@"Dialog" selectedImage:@"Dialog_Selected"];
+    [self setupChildVc:[[UIViewController alloc] init] title:@"控制器1" image:@"" selectedImage:@""];
     
-    [self setupChildVc:[[EUCContactController alloc] init] title:@"通讯录" image:@"Contact" selectedImage:@"Contact_Selected"];
+    [self setupChildVc:[[UIViewController alloc] init] title:@"控制器2" image:@"" selectedImage:@""];
     
-    [self setupChildVc:[[EUCUserController alloc] init] title:@"我的" image:@"User" selectedImage:@"User_Selected"];
+    [self setupChildVc:[[UIViewController alloc] init] title:@"控制器3" image:@"" selectedImage:@""];
     
 }
 
