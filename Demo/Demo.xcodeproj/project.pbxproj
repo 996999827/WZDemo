@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2C89468B26B5D5E04F3FA952 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DCD7AA03806DF7FC06999F /* libPods-Demo.a */; };
+		842CD23E1F590FBD0007107D /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842CD23D1F590FBD0007107D /* BaseTabBarController.m */; };
+		842CD2411F5911990007107D /* BaseNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842CD2401F5911990007107D /* BaseNavgationController.m */; };
 		8444D11A1F5657E2009D7AF5 /* Public.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444D1191F5657E2009D7AF5 /* Public.m */; };
 		8444D12F1F56591C009D7AF5 /* RCRoomSelectCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444D11D1F56591C009D7AF5 /* RCRoomSelectCollectionCell.m */; };
 		8444D1301F56591C009D7AF5 /* RCRoomSelectCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8444D11E1F56591C009D7AF5 /* RCRoomSelectCollectionCell.xib */; };
@@ -29,6 +31,10 @@
 /* Begin PBXFileReference section */
 		19DCD7AA03806DF7FC06999F /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63635026299DE0DBFED980F8 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		842CD23C1F590FBD0007107D /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		842CD23D1F590FBD0007107D /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		842CD23F1F5911990007107D /* BaseNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavgationController.h; sourceTree = "<group>"; };
+		842CD2401F5911990007107D /* BaseNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavgationController.m; sourceTree = "<group>"; };
 		8444D1171F565611009D7AF5 /* Common.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.pch; sourceTree = "<group>"; };
 		8444D1181F5657E2009D7AF5 /* Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
 		8444D1191F5657E2009D7AF5 /* Public.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Public.m; sourceTree = "<group>"; };
@@ -79,6 +85,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		842CD23B1F590F790007107D /* ConcreteClass */ = {
+			isa = PBXGroup;
+			children = (
+				842CD23C1F590FBD0007107D /* BaseTabBarController.h */,
+				842CD23D1F590FBD0007107D /* BaseTabBarController.m */,
+				842CD23F1F5911990007107D /* BaseNavgationController.h */,
+				842CD2401F5911990007107D /* BaseNavgationController.m */,
+			);
+			name = ConcreteClass;
+			path = Demo/ConcreteClass;
+			sourceTree = "<group>";
+		};
 		8444D11B1F56591C009D7AF5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				8460786B1F56531B00C742BA /* Demo */,
+				842CD23B1F590F790007107D /* ConcreteClass */,
 				8460786A1F56531B00C742BA /* Products */,
 				9D3CF8285F84CBF5006EF183 /* Pods */,
 				61D165E4D9AEE0E7BFE162CD /* Frameworks */,
@@ -305,11 +324,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842CD23E1F590FBD0007107D /* BaseTabBarController.m in Sources */,
 				8444D1321F56591C009D7AF5 /* ViewController.m in Sources */,
 				846078711F56531B00C742BA /* AppDelegate.m in Sources */,
 				8444D1371F56591C009D7AF5 /* RoomSelectView.m in Sources */,
 				8444D1311F56591C009D7AF5 /* RCHomeViewController.m in Sources */,
 				8444D12F1F56591C009D7AF5 /* RCRoomSelectCollectionCell.m in Sources */,
+				842CD2411F5911990007107D /* BaseNavgationController.m in Sources */,
 				8444D1331F56591C009D7AF5 /* AnimationView.m in Sources */,
 				8444D1351F56591C009D7AF5 /* MoreView.m in Sources */,
 				8444D11A1F5657E2009D7AF5 /* Public.m in Sources */,

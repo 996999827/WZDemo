@@ -11,5 +11,7 @@
 
 #import <masonry.h>
 #import "Public.h"
+#import "BaseTabBarController.h"
+#import "BaseNavgationController.h"
 
 #endif /* Common__pch */
