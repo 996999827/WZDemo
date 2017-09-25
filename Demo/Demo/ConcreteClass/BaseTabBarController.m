@@ -56,7 +56,7 @@
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     // 包装一个导航控制器, 添加导航控制器为tabbarcontroller的子控制器
-    BaseNavgationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    BaseNavgationController *nav = [[BaseNavgationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
     
     

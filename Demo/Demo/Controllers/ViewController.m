@@ -16,11 +16,20 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    
+- (BOOL)shouldAutorotate
+{
+    return NO;
 }
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+// 设置屏幕方向
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationPortrait;
+}
+
 
 - (IBAction)didClickButton:(id)sender {
     

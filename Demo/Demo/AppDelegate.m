@@ -18,18 +18,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
-    
-   
-    BaseTabBarController* tabVC = [[BaseTabBarController alloc] init];
-    self.window.rootViewController = tabVC;
-
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    
+//   
+//    BaseTabBarController* tabVC = [[BaseTabBarController alloc] init];
+//    self.window.rootViewController = tabVC;
+//
+//    [self.window makeKeyAndVisible];
     
     
     return YES;
 }
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    return UIInterfaceOrientationMaskLandscapeRight;
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

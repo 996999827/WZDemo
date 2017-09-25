@@ -33,6 +33,21 @@
 
 @implementation RCHomeViewController
 
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskLandscape;
+}
+
+// 设置屏幕方向
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationLandscapeLeft;
+}
+
+
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
