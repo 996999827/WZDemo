@@ -25,7 +25,7 @@
     return UIInterfaceOrientationMaskPortrait;
 }
 
-// 设置屏幕方向
+// 设置屏幕方向开始的方向
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
     return UIInterfaceOrientationPortrait;
 }

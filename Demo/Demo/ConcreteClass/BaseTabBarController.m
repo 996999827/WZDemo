@@ -30,6 +30,21 @@
     
 }
 
+- (BOOL)shouldAutorotate
+{
+    return [self.selectedViewController shouldAutorotate];
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return [self.selectedViewController supportedInterfaceOrientations];
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return [self.selectedViewController preferredInterfaceOrientationForPresentation];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // 添加子控制器

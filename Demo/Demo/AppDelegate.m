@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
+
 
 @end
 
@@ -20,19 +22,38 @@
     
 //    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 //    self.window.backgroundColor = [UIColor whiteColor];
-//    
+//
 //   
 //    BaseTabBarController* tabVC = [[BaseTabBarController alloc] init];
 //    self.window.rootViewController = tabVC;
+
+//    UIStoryboard *storyB = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+//    
+//    //通过storyboard实例化一个ViewController
+//    ViewController *topDetialVC = [storyB instantiateViewControllerWithIdentifier:@"ViewController"];
 //
+//    ViewController *viewController = [[ViewController alloc] init];
+//    
+//    BaseNavgationController *navController = [[BaseNavgationController alloc]initWithRootViewController:topDetialVC];
+//    self.window.rootViewController = navController;
+//    
 //    [self.window makeKeyAndVisible];
     
     
     return YES;
 }
 
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
-    return UIInterfaceOrientationMaskLandscapeRight;
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+    
+    if (self.isForceLandscape) {
+        
+        return UIInterfaceOrientationMaskLandscape;
+    }else if (self.isForcePortrait){
+        
+        return UIInterfaceOrientationMaskPortrait;
+    }
+    
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 

@@ -10,6 +10,8 @@
 #import "AnimationView.h"
 #import "RoomSelectView.h"
 
+#import "AppDelegate.h"
+
 @interface RCHomeViewController ()<AnimationViewDelegate> {
     
     BOOL _showView;
@@ -42,26 +44,77 @@
     return UIInterfaceOrientationMaskLandscape;
 }
 
-// 设置屏幕方向
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
-    return UIInterfaceOrientationLandscapeLeft;
+// 设置屏幕方向开始的方向
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+    return UIInterfaceOrientationLandscapeRight;
 }
 
+//隐藏状态栏 （默认隐藏）
+- (BOOL)prefersStatusBarHidden {
+    return NO;
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
+    
+    
+    // 强制横屏
+    [self forceOrientationLandscape];
+    
+    BaseNavgationController *nav = (BaseNavgationController *)self.navigationController;
+    nav.interfaceOrientation = UIInterfaceOrientationLandscapeRight;
+    nav.interfaceOrientationMask = UIInterfaceOrientationMaskLandscapeRight;
+    
+    //强制翻转屏幕，Home键在右边。
+    [[UIDevice currentDevice] setValue:@(UIInterfaceOrientationLandscapeRight) forKey:@"orientation"];
+    //刷新
+    [UIViewController attemptRotationToDeviceOrientation];
+    
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
     
     [super viewDidDisappear:animated];
     self.navigationController.navigationBarHidden = NO;
+    
+    //强制旋转竖屏
+    [self forceOrientationPortrait];
+    BaseNavgationController *navi = (BaseNavgationController *)self.navigationController;
+    navi.interfaceOrientation = UIInterfaceOrientationPortrait;
+    navi.interfaceOrientationMask = UIInterfaceOrientationMaskPortrait;
+    
+    //设置屏幕的转向为竖屏
+    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
+    //刷新
+    [UIViewController attemptRotationToDeviceOrientation];
+}
+
+#pragma  mark 横屏设置
+//强制横屏
+- (void)forceOrientationLandscape{
+    
+    AppDelegate *appdelegate=(AppDelegate *)[UIApplication sharedApplication].delegate;
+    appdelegate.isForceLandscape=YES;
+    appdelegate.isForcePortrait=NO;
+    [appdelegate application:[UIApplication sharedApplication] supportedInterfaceOrientationsForWindow:self.view.window];
+}
+
+//强制竖屏
+- (void)forceOrientationPortrait{
+    
+    AppDelegate *appdelegate=(AppDelegate *)[UIApplication sharedApplication].delegate;
+    appdelegate.isForcePortrait=YES;
+    appdelegate.isForceLandscape=NO;
+    [appdelegate application:[UIApplication sharedApplication] supportedInterfaceOrientationsForWindow:self.view.window];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // 表示本类支持旋转
+    [UIViewController attemptRotationToDeviceOrientation];
     
     _showView = YES;
     
