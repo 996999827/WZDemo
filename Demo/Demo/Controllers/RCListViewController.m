@@ -20,6 +20,12 @@
     self.title = @"列表";
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = NO;
+    
+}
+
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -78,9 +84,14 @@
         }];
         
     } else {
+        
         RCHomeViewController *homeVC = [[RCHomeViewController alloc]init];
         homeVC.isPush = YES;
         [self.navigationController pushViewController:homeVC animated:YES];
+        
+        AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        appDelegate.isForceLandscape = YES;
+        [Public setNewOrientation:YES];
         
     }
 }

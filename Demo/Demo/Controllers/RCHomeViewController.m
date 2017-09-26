@@ -48,14 +48,15 @@
 //}
 
 //隐藏状态栏 （默认隐藏）
-- (BOOL)prefersStatusBarHidden {
-    return NO;
-}
+//- (BOOL)prefersStatusBarHidden {
+//    return NO;
+//}
 
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
+    
     
 //    // 强制横屏
 //    [self forceOrientationLandscape];
@@ -260,7 +261,12 @@
             
             //弹出效果
             if (self.isPush) {
-                [self.navigationController popViewControllerAnimated:YES];
+                
+                [self.navigationController popViewControllerAnimated:NO];
+                
+                appDelegate.isForceLandscape = NO;//关闭横屏仅允许竖屏
+                [Public setNewOrientation:NO];
+                
             } else {
                 [Public setNewOrientation:YES];
                 [self dismissViewControllerAnimated:NO completion:^{
@@ -281,8 +287,6 @@
         default:
             break;
     }
-    
-    
 }
 
 - (void)addRoomSelectView {
