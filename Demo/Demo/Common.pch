@@ -10,8 +10,12 @@
 #define Common__pch
 
 #import <masonry.h>
+#import "UIView+Frame.h"
 #import "Public.h"
 #import "BaseTabBarController.h"
 #import "BaseNavgationController.h"
+#import "BaseTBCell.h"
+#import "BaseViewController.h"
+#import "BaseTBViewController.h"
 
 #endif /* Common__pch */

@@ -26,6 +26,10 @@
 		846078711F56531B00C742BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846078701F56531B00C742BA /* AppDelegate.m */; };
 		846078791F56531B00C742BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846078781F56531B00C742BA /* Assets.xcassets */; };
 		8460787C1F56531B00C742BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8460787A1F56531B00C742BA /* LaunchScreen.storyboard */; };
+		84FCBEB31F79E5DF002D29B7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FCBEB21F79E5DF002D29B7 /* BaseViewController.m */; };
+		84FCBEB61F79E5F8002D29B7 /* BaseTBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FCBEB51F79E5F8002D29B7 /* BaseTBViewController.m */; };
+		84FCBEB91F79E638002D29B7 /* BaseTBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FCBEB81F79E638002D29B7 /* BaseTBCell.m */; };
+		84FCBEBD1F79E8D4002D29B7 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FCBEBC1F79E8D4002D29B7 /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,14 @@
 		846078781F56531B00C742BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8460787B1F56531B00C742BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8460787D1F56531B00C742BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FCBEB11F79E5DF002D29B7 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		84FCBEB21F79E5DF002D29B7 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		84FCBEB41F79E5F8002D29B7 /* BaseTBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTBViewController.h; sourceTree = "<group>"; };
+		84FCBEB51F79E5F8002D29B7 /* BaseTBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTBViewController.m; sourceTree = "<group>"; };
+		84FCBEB71F79E638002D29B7 /* BaseTBCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTBCell.h; sourceTree = "<group>"; };
+		84FCBEB81F79E638002D29B7 /* BaseTBCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTBCell.m; sourceTree = "<group>"; };
+		84FCBEBB1F79E8D4002D29B7 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		84FCBEBC1F79E8D4002D29B7 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		D76EF936FE12E773A7D46B1E /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +104,12 @@
 				842CD23D1F590FBD0007107D /* BaseTabBarController.m */,
 				842CD23F1F5911990007107D /* BaseNavgationController.h */,
 				842CD2401F5911990007107D /* BaseNavgationController.m */,
+				84FCBEB11F79E5DF002D29B7 /* BaseViewController.h */,
+				84FCBEB21F79E5DF002D29B7 /* BaseViewController.m */,
+				84FCBEB41F79E5F8002D29B7 /* BaseTBViewController.h */,
+				84FCBEB51F79E5F8002D29B7 /* BaseTBViewController.m */,
+				84FCBEB71F79E638002D29B7 /* BaseTBCell.h */,
+				84FCBEB81F79E638002D29B7 /* BaseTBCell.m */,
 			);
 			name = ConcreteClass;
 			path = Demo/ConcreteClass;
@@ -146,6 +164,7 @@
 			children = (
 				8460786B1F56531B00C742BA /* Demo */,
 				842CD23B1F590F790007107D /* ConcreteClass */,
+				84FCBEBA1F79E89B002D29B7 /* Category */,
 				8460786A1F56531B00C742BA /* Products */,
 				9D3CF8285F84CBF5006EF183 /* Pods */,
 				61D165E4D9AEE0E7BFE162CD /* Frameworks */,
@@ -187,6 +206,16 @@
 				8460786D1F56531B00C742BA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84FCBEBA1F79E89B002D29B7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				84FCBEBB1F79E8D4002D29B7 /* UIView+Frame.h */,
+				84FCBEBC1F79E8D4002D29B7 /* UIView+Frame.m */,
+			);
+			name = Category;
+			path = Demo/Category;
 			sourceTree = "<group>";
 		};
 		9D3CF8285F84CBF5006EF183 /* Pods */ = {
@@ -326,7 +355,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				842CD23E1F590FBD0007107D /* BaseTabBarController.m in Sources */,
+				84FCBEB31F79E5DF002D29B7 /* BaseViewController.m in Sources */,
 				8444D1321F56591C009D7AF5 /* ViewController.m in Sources */,
+				84FCBEBD1F79E8D4002D29B7 /* UIView+Frame.m in Sources */,
+				84FCBEB61F79E5F8002D29B7 /* BaseTBViewController.m in Sources */,
 				846078711F56531B00C742BA /* AppDelegate.m in Sources */,
 				8444D1371F56591C009D7AF5 /* RoomSelectView.m in Sources */,
 				8444D1311F56591C009D7AF5 /* RCHomeViewController.m in Sources */,
@@ -335,6 +367,7 @@
 				8444D1331F56591C009D7AF5 /* AnimationView.m in Sources */,
 				8444D1351F56591C009D7AF5 /* MoreView.m in Sources */,
 				8444D11A1F5657E2009D7AF5 /* Public.m in Sources */,
+				84FCBEB91F79E638002D29B7 /* BaseTBCell.m in Sources */,
 				8460786E1F56531B00C742BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
