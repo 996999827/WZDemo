@@ -46,13 +46,14 @@
 
 // 设置屏幕方向开始的方向
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+    
     return UIInterfaceOrientationLandscapeRight;
 }
 
-//隐藏状态栏 （默认隐藏）
-- (BOOL)prefersStatusBarHidden {
-    return NO;
-}
+////隐藏状态栏 （默认隐藏）
+//- (BOOL)prefersStatusBarHidden {
+//    return NO;
+//}
 
 - (void)viewWillAppear:(BOOL)animated {
     
@@ -60,17 +61,17 @@
     self.navigationController.navigationBarHidden = YES;
     
     
-    // 强制横屏
-    [self forceOrientationLandscape];
-    
-    BaseNavgationController *nav = (BaseNavgationController *)self.navigationController;
-    nav.interfaceOrientation = UIInterfaceOrientationLandscapeRight;
-    nav.interfaceOrientationMask = UIInterfaceOrientationMaskLandscapeRight;
-    
-    //强制翻转屏幕，Home键在右边。
-    [[UIDevice currentDevice] setValue:@(UIInterfaceOrientationLandscapeRight) forKey:@"orientation"];
-    //刷新
-    [UIViewController attemptRotationToDeviceOrientation];
+//    // 强制横屏
+//    [self forceOrientationLandscape];
+//
+//    BaseNavgationController *nav = (BaseNavgationController *)self.navigationController;
+//    nav.interfaceOrientation = UIInterfaceOrientationLandscapeRight;
+//    nav.interfaceOrientationMask = UIInterfaceOrientationMaskLandscapeRight;
+//
+//    //强制翻转屏幕，Home键在右边。
+//    [[UIDevice currentDevice] setValue:@(UIInterfaceOrientationLandscapeRight) forKey:@"orientation"];
+//    //刷新
+//    [UIViewController attemptRotationToDeviceOrientation];
     
 }
 
@@ -79,16 +80,16 @@
     [super viewDidDisappear:animated];
     self.navigationController.navigationBarHidden = NO;
     
-    //强制旋转竖屏
-    [self forceOrientationPortrait];
-    BaseNavgationController *navi = (BaseNavgationController *)self.navigationController;
-    navi.interfaceOrientation = UIInterfaceOrientationPortrait;
-    navi.interfaceOrientationMask = UIInterfaceOrientationMaskPortrait;
-    
-    //设置屏幕的转向为竖屏
-    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
-    //刷新
-    [UIViewController attemptRotationToDeviceOrientation];
+//    //强制旋转竖屏
+//    [self forceOrientationPortrait];
+//    BaseNavgationController *navi = (BaseNavgationController *)self.navigationController;
+//    navi.interfaceOrientation = UIInterfaceOrientationPortrait;
+//    navi.interfaceOrientationMask = UIInterfaceOrientationMaskPortrait;
+//
+//    //设置屏幕的转向为竖屏
+//    [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
+//    //刷新
+//    [UIViewController attemptRotationToDeviceOrientation];
 }
 
 #pragma  mark 横屏设置
@@ -114,11 +115,11 @@
     [super viewDidLoad];
     
     // 表示本类支持旋转
-    [UIViewController attemptRotationToDeviceOrientation];
+//    [UIViewController attemptRotationToDeviceOrientation];
     
     _showView = YES;
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor orangeColor];
     
     // 添加按钮
     [self addButtons];
@@ -264,7 +265,9 @@
     switch (tag) {
         case AnimationViewTypeBack:
             
-            [self.navigationController popViewControllerAnimated:YES];
+            //弹出效果
+            [self dismissViewControllerAnimated:YES completion:nil];
+//            [self.navigationController popViewControllerAnimated:YES];
             
             break;
             

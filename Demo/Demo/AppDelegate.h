@@ -15,6 +15,5 @@
 @property (assign , nonatomic) BOOL isForceLandscape;
 @property (assign , nonatomic) BOOL isForcePortrait;
 
-
 @end
 

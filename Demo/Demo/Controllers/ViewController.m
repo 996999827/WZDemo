@@ -18,7 +18,7 @@
 
 - (BOOL)shouldAutorotate
 {
-    return NO;
+    return YES;
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
@@ -30,13 +30,26 @@
     return UIInterfaceOrientationPortrait;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBarHidden = NO;
+}
+
+- (void)viewDidLoad {
+    self.view.backgroundColor = [UIColor redColor];
+    
+}
 
 - (IBAction)didClickButton:(id)sender {
     
     RCHomeViewController *homeView = [[RCHomeViewController alloc]init];
-    
-    [self.navigationController pushViewController:homeView animated:YES];
-    
+    self.navigationController.navigationBarHidden = YES;
+    [self presentViewController:homeView animated:YES completion:^{
+        
+        
+    }];
+//    [self.navigationController pushViewController:homeView animated:YES];
 }
 
 @end
