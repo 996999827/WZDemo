@@ -131,12 +131,12 @@
 		8444D11F1F56591C009D7AF5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8444D1201F56591C009D7AF5 /* RCHomeViewController.h */,
-				8444D1211F56591C009D7AF5 /* RCHomeViewController.m */,
 				8444D1221F56591C009D7AF5 /* ViewController.h */,
 				8444D1231F56591C009D7AF5 /* ViewController.m */,
 				84FCBEBE1F79EAE1002D29B7 /* RCListViewController.h */,
 				84FCBEBF1F79EAE1002D29B7 /* RCListViewController.m */,
+				8444D1201F56591C009D7AF5 /* RCHomeViewController.h */,
+				8444D1211F56591C009D7AF5 /* RCHomeViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

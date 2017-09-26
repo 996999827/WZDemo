@@ -43,18 +43,16 @@
     return YES;
 }
 
-//- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
-//
-//    if (self.isForceLandscape) {
-//
-//        return UIInterfaceOrientationMaskLandscape;
-//    }else if (self.isForcePortrait){
-//
-//        return UIInterfaceOrientationMaskPortrait;
-//    }
-//
-//    return UIInterfaceOrientationMaskPortrait;
-//}
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+
+    if (self.isForceLandscape) {
+
+        return UIInterfaceOrientationMaskLandscape;
+    }else {
+
+        return UIInterfaceOrientationMaskPortrait;
+    }
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

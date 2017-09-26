@@ -59,6 +59,9 @@ static inline NSString *_Nullable CheckValue(NSString *_Nullable value) {
 
 @interface Public : NSObject
 
+// 设置设备方向
++ (void)setNewOrientation:(BOOL)isForceLandscape;
+
 @end
 
 NS_ASSUME_NONNULL_END

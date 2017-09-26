@@ -9,6 +9,7 @@
 #ifndef Common__pch
 #define Common__pch
 
+#import "AppDelegate.h"
 #import <masonry.h>
 #import "UIView+Frame.h"
 #import "Public.h"

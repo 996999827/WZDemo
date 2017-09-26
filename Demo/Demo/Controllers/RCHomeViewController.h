@@ -6,9 +6,9 @@
 //  Copyright © 2017年 Jha. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface RCHomeViewController : UIViewController
+@interface RCHomeViewController : BaseViewController
 
 
 @property (nonatomic, assign) BOOL isPush;

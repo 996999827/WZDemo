@@ -35,7 +35,7 @@
     
     cell.backgroundColor = [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
     
-    if (indexPath.row / 2 == 1) {
+    if (indexPath.row  % 2 == 1) {
         cell.textLabel.text = @"模态弹出";
     } else {
         cell.textLabel.text = @"Push视图";
@@ -63,11 +63,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    if (indexPath.row / 2 == 1) {
+    if (indexPath.row % 2 == 1) {
         RCHomeViewController *homeVC = [[RCHomeViewController alloc]init];
         homeVC.isPush = NO;
+        
+        AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        appDelegate.isForceLandscape = YES;
+        // 将试图横屏
+        
+        
         [self presentViewController:homeVC animated:YES completion:^{
-            // 将试图横屏
+            
             
         }];
         
