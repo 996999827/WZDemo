@@ -266,8 +266,11 @@
         case AnimationViewTypeBack:
             
             //弹出效果
-            [self dismissViewControllerAnimated:YES completion:nil];
-//            [self.navigationController popViewControllerAnimated:YES];
+            if (self.isPush) {
+                [self.navigationController popViewControllerAnimated:YES];
+            } else {
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }
             
             break;
             

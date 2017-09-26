@@ -10,4 +10,7 @@
 
 @interface RCHomeViewController : UIViewController
 
+
+@property (nonatomic, assign) BOOL isPush;
+
 @end
