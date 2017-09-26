@@ -15,6 +15,9 @@
     BOOL _showView;
 }
 
+// 屏幕方向
+@property (nonatomic, assign)UIInterfaceOrientation orientation;
+
 @property (weak, nonatomic) UIButton *backButton;
 @property (weak, nonatomic) UIButton *saveButton;
 @property (weak, nonatomic) UIButton *selectButton;
@@ -109,15 +112,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.orientation = UIInterfaceOrientationLandscapeRight;
+    
     _showView = YES;
     
     self.view.backgroundColor = [UIColor orangeColor];
     
     // 添加按钮
     [self addButtons];
-    
+    [self addNotification];
 }
-
 // 添加按钮
 - (void)addButtons {
     
@@ -250,6 +254,13 @@
     }
 }
 
+- (void)addNotification{
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarOrientationChange:)
+                                                 name:UIDeviceOrientationDidChangeNotification object:nil];//屏幕旋转的通知
+}
+
+#pragma mark -按钮事件
 - (void)didClickButtonAction:(UIButton *)btn {
     
     NSInteger tag = btn.tag;
@@ -262,13 +273,16 @@
             //弹出效果
             if (self.isPush) {
                 
+                [[UIDevice currentDevice] setValue:@(self.orientation) forKey:@"orientation"];
+
                 [self.navigationController popViewControllerAnimated:NO];
                 
                 appDelegate.isForceLandscape = NO;//关闭横屏仅允许竖屏
                 [Public setNewOrientation:NO];
                 
             } else {
-                [Public setNewOrientation:YES];
+                
+                [[UIDevice currentDevice] setValue:@(self.orientation) forKey:@"orientation"];
                 [self dismissViewControllerAnimated:NO completion:^{
                     appDelegate.isForceLandscape = NO;//关闭横屏仅允许竖屏
                     [Public setNewOrientation:NO];
@@ -286,6 +300,28 @@
         
         default:
             break;
+    }
+}
+
+#pragma mark - 屏幕旋转
+-(void)statusBarOrientationChange:(NSNotification*)notification{
+    
+    NSDictionary* ntfDict = [notification userInfo];
+    
+//    ntfDict[@"UIDeviceOrientationRotateAnimatedUserInfoKey"];
+    
+    UIDeviceOrientation interfaceOrientation = [UIDevice currentDevice].orientation;
+    
+    if (interfaceOrientation == UIDeviceOrientationPortrait || interfaceOrientation == UIDeviceOrientationPortraitUpsideDown) {
+        
+        self.orientation = self.orientation;
+        
+    } else if (interfaceOrientation==UIDeviceOrientationLandscapeLeft) {
+        self.orientation = UIInterfaceOrientationLandscapeRight;
+        
+    } else if (interfaceOrientation == UIDeviceOrientationLandscapeRight) {
+        
+        self.orientation = UIInterfaceOrientationLandscapeLeft;
     }
 }
 
@@ -411,6 +447,11 @@
     leftAnimationIn.autoreverses = NO;
     
     return leftAnimationIn;
+}
+
+- (void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

@@ -52,6 +52,7 @@
 
         return UIInterfaceOrientationMaskPortrait;
     }
+
 }
 
 

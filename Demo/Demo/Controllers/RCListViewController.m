@@ -75,13 +75,10 @@
         
         AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
         appDelegate.isForceLandscape = YES;
-        // 将试图横屏
+        // 将视图横屏
+        [Public setNewOrientation:YES];
         
-        
-        [self presentViewController:homeVC animated:YES completion:^{
-            
-            
-        }];
+        [self presentViewController:homeVC animated:YES completion:nil];
         
     } else {
         
