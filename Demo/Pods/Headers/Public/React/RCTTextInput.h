@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/Libraries/Text/RCTTextInput.h
+../../../../ReactComponent/node_modules/react-native/Libraries/Text/RCTTextInput.h

@@ -1,1 +1,1 @@
-../../../../../../node_modules/react-native/React/Base/RCTPlatform.h
+../../../../../ReactComponent/node_modules/react-native/React/Base/RCTPlatform.h

@@ -50,10 +50,19 @@
                                     <action selector="didClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fJ6-vE-UZj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fud-Jp-k27">
+                                <rect key="frame" x="162" y="373.5" width="52" height="30"/>
+                                <state key="normal" title="RN入口"/>
+                                <connections>
+                                    <action selector="didClickRNButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y5c-e9-Vah"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vj8-XG-JpO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0RT-O6-nZL"/>
+                            <constraint firstItem="fud-Jp-k27" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GVn-IG-NFW"/>
+                            <constraint firstItem="fud-Jp-k27" firstAttribute="top" secondItem="vj8-XG-JpO" secondAttribute="bottom" constant="20" id="gIR-A7-oYi"/>
                             <constraint firstItem="vj8-XG-JpO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jEa-un-Rj2"/>
                         </constraints>
                     </view>

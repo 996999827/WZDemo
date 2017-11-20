@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/Libraries/WebSocket/RCTReconnectingWebSocket.h
+../../../../ReactComponent/node_modules/react-native/Libraries/WebSocket/RCTReconnectingWebSocket.h

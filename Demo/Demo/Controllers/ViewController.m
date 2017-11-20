@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "RCListViewController.h"
+#import "ReactViewController.h"
+
 
 @interface ViewController ()
 
@@ -26,5 +28,14 @@
     
     [self.navigationController pushViewController:listVC animated:YES];
 }
+
+- (IBAction)didClickRNButton:(id)sender {
+    
+    ReactViewController *reactVC = [[ReactViewController alloc]init];
+    
+    [self.navigationController pushViewController:reactVC animated:YES];
+    
+}
+
 
 @end

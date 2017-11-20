@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/Libraries/Text/RCTBackedTextInputViewProtocol.h
+../../../../ReactComponent/node_modules/react-native/Libraries/Text/RCTBackedTextInputViewProtocol.h

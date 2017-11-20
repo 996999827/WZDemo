@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/Libraries/Text/RCTShadowTextView.h
+../../../../ReactComponent/node_modules/react-native/Libraries/Text/RCTShadowTextView.h

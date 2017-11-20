@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/Libraries/Blob/RCTBlobManager.h
+../../../../ReactComponent/node_modules/react-native/Libraries/Blob/RCTBlobManager.h

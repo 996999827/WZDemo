@@ -1,1 +1,1 @@
-../../../../../../node_modules/react-native/React/Modules/RCTDevSettings.h
+../../../../../ReactComponent/node_modules/react-native/React/Modules/RCTDevSettings.h
