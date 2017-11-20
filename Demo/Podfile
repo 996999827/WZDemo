@@ -1,5 +1,15 @@
+
+platform :ios, ‘9.0’
+
 target 'Demo' do
 
 pod 'Masonry'
+pod ‘yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket'
+  ]
 end
 
